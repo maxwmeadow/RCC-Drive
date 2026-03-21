@@ -1,0 +1,117 @@
+{
+  "sample_token": "DUMMY_SAMPLE_001",
+  "scene_token": "DUMMY_SCENE_001",
+  "timestamp": 1532402927647951,
+  "ego_pose": {
+    "translation": [411.3, 1180.8, 0.0],
+    "rotation": [0.68, 0.0, 0.0, -0.73]
+  },
+  "num_pedestrians": 3,
+  "num_vehicles": 3,
+  "num_crosswalks": 1,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "ped_001",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian",
+      "_comment": "Pedestrian is far from ego vehicle - safe distance"
+    },
+    {
+      "subject": "ego",
+      "object": "ped_002",
+      "object_category": "human.pedestrian.adult",
+      "relation": "EC",
+      "pair_type": "ego_vs_pedestrian",
+      "_comment": "Pedestrian is touching the ego vehicle boundary - immediate danger"
+    },
+    {
+      "subject": "ego",
+      "object": "ped_003",
+      "object_category": "human.pedestrian.child",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian",
+      "_comment": "Child pedestrian disconnected from ego"
+    },
+    {
+      "subject": "ped_001",
+      "subject_category": "human.pedestrian.adult",
+      "object": "crosswalk_001",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk",
+      "_comment": "Pedestrian fully inside crosswalk, not touching boundary"
+    },
+    {
+      "subject": "ped_002",
+      "subject_category": "human.pedestrian.adult",
+      "object": "crosswalk_001",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk",
+      "_comment": "Pedestrian partially overlapping crosswalk - stepping off"
+    },
+    {
+      "subject": "ped_003",
+      "subject_category": "human.pedestrian.child",
+      "object": "crosswalk_001",
+      "object_category": "ped_crossing",
+      "relation": "DC",
+      "pair_type": "pedestrian_vs_crosswalk",
+      "_comment": "Child near but not on crosswalk - jaywalking risk"
+    },
+    {
+      "subject": "ego",
+      "object": "veh_001",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle",
+      "_comment": "Car in adjacent lane, safe separation"
+    },
+    {
+      "subject": "ego",
+      "object": "veh_002",
+      "object_category": "vehicle.truck",
+      "relation": "EC",
+      "pair_type": "ego_vs_vehicle",
+      "_comment": "Truck touching ego boundary - dangerously close"
+    },
+    {
+      "subject": "ego",
+      "object": "veh_003",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle",
+      "_comment": "Oncoming car, disconnected"
+    },
+    {
+      "subject": "veh_001",
+      "subject_category": "vehicle.car",
+      "object": "veh_002",
+      "object_category": "vehicle.truck",
+      "relation": "EC",
+      "pair_type": "vehicle_vs_vehicle",
+      "_comment": "Car and truck side by side, touching at boundary"
+    },
+    {
+      "subject": "veh_001",
+      "subject_category": "vehicle.car",
+      "object": "veh_003",
+      "object_category": "vehicle.car",
+      "relation": "PO",
+      "pair_type": "vehicle_vs_vehicle",
+      "_comment": "Two cars partially overlapping - collision scenario"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 0,
+    "_comment": "This is a dummy file with hand-crafted RCC-8 relations for Person 2 to develop prompts against. Relations cover DC, EC, PO, NTPP across all pair types. Replace with real nuScenes data when Phase 1 pipeline is complete."
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [4.084, 1.730],
+    "coordinate_frame": "global_bev"
+  }
+}

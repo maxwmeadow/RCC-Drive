@@ -1,0 +1,38 @@
+# nuScenes dataset — large binary/sensor data, never commit
+data/
+
+# Pipeline outputs — generated artifacts, reproducible from data
+output/spatial_facts/
+output/visualizations/
+
+# output/curated_samples.json  ← intentionally committed (primary Phase 1 handoff artifact)
+# output/_summary.json         ← intentionally committed (Phase 1 pipeline stats)
+
+# Comparison/debug images generated during development
+output/comparison_*.png
+comparison_*.png
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Keep these (committed intentionally):
+# output/               ← directory itself can exist, contents below are ignored
+# dummy/                ← Person 2 needs spatial_facts_dummy.json
+CSE 834 Project Planning.pdf
+# README.md
+
+.claude/

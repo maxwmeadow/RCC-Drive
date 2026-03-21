@@ -1,0 +1,6 @@
+nuscenes-devkit>=1.1.11
+shapely>=2.0
+pyquaternion>=0.9.9
+numpy>=1.24
+matplotlib>=3.7
+pytest
