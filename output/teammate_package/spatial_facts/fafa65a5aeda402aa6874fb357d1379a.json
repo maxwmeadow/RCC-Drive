@@ -1,0 +1,227 @@
+{
+  "sample_token": "fafa65a5aeda402aa6874fb357d1379a",
+  "scene_token": "76b36918bd4c487581a4196ffd1b1434",
+  "timestamp": 1537297000949837,
+  "ego_pose": {
+    "translation": [
+      759.564409752503,
+      1515.3947840244857,
+      0.0
+    ],
+    "rotation": [
+      0.9369107154009342,
+      0.0037975331705886847,
+      -0.003401191051256704,
+      -0.34953157512327904
+    ]
+  },
+  "num_pedestrians": 8,
+  "num_vehicles": 17,
+  "num_crosswalks": 11,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "946353f48d324efb8d122942631b195d",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "a8d3c145ae814df49ff6edf7217b0c55",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "31de8cceb31948a9b9d378e09816f26f",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "a3bce3241d1f41c7b377e6d4b03fac81",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "f853e94c631c4d21a766f4fe20031639",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "d75c54a5015749cc8e714259642e155f",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "c8bbf3cec8ac4f558a4497cc4ce2b632",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "60694caa2b5f487d91b4e5a37fb60441",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "a8d3c145ae814df49ff6edf7217b0c55",
+      "subject_category": "human.pedestrian.adult",
+      "object": "39f6bb4e-c886-43a6-b7e0-7f9a231e50f2",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "a3bce3241d1f41c7b377e6d4b03fac81",
+      "subject_category": "human.pedestrian.adult",
+      "object": "08806a85-efbf-47a5-abc8-f2ae6c24be30",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "fd1e85ea59504292850c2fb0dd727c95",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3531b944a3b44c969bb616ac3c227867",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "f27a3b90c59c488db52d8a1d3604b26e",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "9033610902134334950e5c77042e82a7",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "fce89a83e4af4d1f8efa821a97761c2a",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "babe6a4aa9c14ab39ec437ecf0ff0b06",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "896dd198619348a2961245b30868c802",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "4d6567734c324a8cbdca3dc4e8c8dd5c",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "ea90385da5564741b118c941e6f9ec46",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "396e18794df54452ba59bf6afe5c6e56",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "f4fddf81926a4065b5ae1ace8f486c02",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "08bd06534fbc49c0ac600385a6938069",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "88007237e13b4783abc0a87df246a252",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "1eba82291aa34e56b95066f8da18f39b",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "cd32e216b24e4cf88c3c6192f3d80cbf",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "f0c8995720534ac485268cae304af365",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "07b382d2a04d4b4abba52d341fc9d3f9",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 52,
+    "dc_ped_crosswalk_pairs_dropped": 86
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

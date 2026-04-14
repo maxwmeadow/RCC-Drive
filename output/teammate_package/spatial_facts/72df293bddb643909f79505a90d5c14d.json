@@ -1,0 +1,149 @@
+{
+  "sample_token": "72df293bddb643909f79505a90d5c14d",
+  "scene_token": "d58468c6097c425e89671a7b3f480acf",
+  "timestamp": 1537297448948910,
+  "ego_pose": {
+    "translation": [
+      1279.3961592615456,
+      1498.2845807851297,
+      0.0
+    ],
+    "rotation": [
+      -0.24275649689024237,
+      -0.0006945626034872477,
+      -0.006652342558594938,
+      -0.9700641974317217
+    ]
+  },
+  "num_pedestrians": 5,
+  "num_vehicles": 10,
+  "num_crosswalks": 4,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "e4fab691a0ed44fc90724c45d22f1793",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "1112bb7a129e4b60b9de579b8d2f2750",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "70a4728ef3b3433ba5e87406922fb1ae",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "06ecceaa3e104a24b98aba95b13f5ab9",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "81c8815aeb0a43fe89fc79ad079bce0f",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "06ecceaa3e104a24b98aba95b13f5ab9",
+      "subject_category": "human.pedestrian.adult",
+      "object": "d04322de-e9e6-4449-8cf4-357425ab4f8d",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "e0e98bd957df4230a4b7c5f1b64cebb6",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "d1f7893516a94f7e80a1f81172997fa8",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "9d6ec97013e34167b12d852255767a44",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3095df4d6e3245a68696d9116527c62a",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "861d5bb80dbd46cd97a0d92548bb4107",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "f04a75d1f08b442da2d15452b5673405",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "ba809d8292ad41c4b5b5fc0898539bb6",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "c6a435b7f719417f9a4b44812f1bf6ff",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "0589ec1207564b388ee530f024633fd3",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "cdabd46a0d9d404fb393668975f54dc2",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 16,
+    "dc_ped_crosswalk_pairs_dropped": 19
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sample_token": "9c669f0d158e4ac092743162ecca9458",
+  "scene_token": "c0990deaa8954a54afc86f7710f349a1",
+  "timestamp": 1538986201947737,
+  "ego_pose": {
+    "translation": [
+      774.4153880485031,
+      1550.2893153795444,
+      0.0
+    ],
+    "rotation": [
+      -0.08554329902936009,
+      0.02271389079102152,
+      0.0038586677302367618,
+      -0.9960680367523363
+    ]
+  },
+  "num_pedestrians": 8,
+  "num_vehicles": 7,
+  "num_crosswalks": 2,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "e70e9fb9392344ed9840733795ed64ae",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "f0f1afeec8ed4bb2a3deb8d7e4cedca8",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "8512a7c573034184a13991d017b0c3a6",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "ff49a14351304720a22f143469be3580",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "dfbd52fe86d648c29667a0f6182b2577",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "d9b16196a76f4c53b9c6341bd781e4a2",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "139ce9a825054cc69478c3f56efc5e68",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "ccbfa37126084fa5a5f24d0d5bc9d0e4",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "d9b16196a76f4c53b9c6341bd781e4a2",
+      "subject_category": "human.pedestrian.adult",
+      "object": "0ea8c5b4-e975-4322-9e7b-be4a8764c129",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "79f861a0c4ac48b6a01c085e99e73d17",
+      "object_category": "vehicle.bicycle",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "648c6516cacf433fa68018bbaee91bc5",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "d034321cfa8c41db95e384e5eba51dfd",
+      "object_category": "vehicle.motorcycle",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "82585a2bfb4d497fabadc580ad5fe337",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "7eebd23c9ddc450a89ebb919299fd419",
+      "object_category": "vehicle.bicycle",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "131d86eac27e4ff4ba5079f1636bc116",
+      "object_category": "vehicle.motorcycle",
+      "relation": "PO",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "615119d3cd8f470fbe11f737908377d0",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 5,
+    "dc_ped_crosswalk_pairs_dropped": 15
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

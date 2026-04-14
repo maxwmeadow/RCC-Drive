@@ -1,0 +1,93 @@
+{
+  "sample_token": "e884c9e0f2414843a89451f7ce015f49",
+  "scene_token": "bed67ef03c4a4066a74f6c0117d512ee",
+  "timestamp": 1533151727448526,
+  "ego_pose": {
+    "translation": [
+      1114.6181149126605,
+      1388.939966317642,
+      0.0
+    ],
+    "rotation": [
+      0.9963386353626764,
+      -0.016618401888472228,
+      -0.0010003457352425929,
+      0.0838579257478044
+    ]
+  },
+  "num_pedestrians": 2,
+  "num_vehicles": 5,
+  "num_crosswalks": 9,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "0967d0d4372949eea053d44dc4fd025b",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "2ed77bc689b04b79a8f3381addc9a7b5",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "0967d0d4372949eea053d44dc4fd025b",
+      "subject_category": "human.pedestrian.adult",
+      "object": "36d4809d-9b21-4843-8fd1-709c4e4f2d75",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "555a281a55144bd4bee372e9bc422ce4",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "39ed6f03751242cca3e97b97f411fdf0",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "9fc77932dd7f409fb60d80a648186eb9",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "a580e36059864cfd969d0ce44662d8ca",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "7b34e163396e44429eabc280c4e5bd50",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 10,
+    "dc_ped_crosswalk_pairs_dropped": 17
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

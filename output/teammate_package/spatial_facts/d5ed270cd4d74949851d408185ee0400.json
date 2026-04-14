@@ -1,0 +1,149 @@
+{
+  "sample_token": "d5ed270cd4d74949851d408185ee0400",
+  "scene_token": "857922568e4e4fb89c3ee3010eb93c7c",
+  "timestamp": 1537297475399242,
+  "ego_pose": {
+    "translation": [
+      1168.9488500605266,
+      1571.4539770344682,
+      0.0
+    ],
+    "rotation": [
+      -0.30279158442040244,
+      -0.002747361179780138,
+      -0.007888370831604765,
+      -0.9530201897212636
+    ]
+  },
+  "num_pedestrians": 4,
+  "num_vehicles": 11,
+  "num_crosswalks": 9,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "a6f7db03f05247eaa14d50f4f08d346b",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "31ac8e81a7c342d38a5571bc87683e3e",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "478f79440a974a86a7952d768f54c914",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "51fc89fba4ca4c42926eae76a895bdc6",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "31ac8e81a7c342d38a5571bc87683e3e",
+      "subject_category": "human.pedestrian.adult",
+      "object": "d6d64caf-6f69-4e8f-ab9b-37e433a36e54",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "76fc3ebbc26e43cfa4b3189c60f12d97",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "cf6a06e59c034621aa6c94445f5254d8",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "e2a7febca74c4b5ca8c4c458e1b12e9b",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "62dc41a7de9c43be8b082c33dfe1af60",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "8e9e06cd343a414bb1f820b0da1153ac",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3ca035aba9a04aef99c9730ab14f8dad",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "18f151fbc5d94856aca8ff35a3d694f5",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3d3dcbcbbb104960a5c248f09e5bacf9",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "9133b92e0b3445abaab5d4c1184e0f97",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "69265a67f6d646d8b4f4ffe3d6314e89",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "114de59d14544ab0b3871254b1f3e0e1",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 9,
+    "dc_ped_crosswalk_pairs_dropped": 35
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

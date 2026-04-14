@@ -1,0 +1,377 @@
+{
+  "sample_token": "2fd8f9bd71664143bc0e643a914791be",
+  "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+  "timestamp": 1533114333046771,
+  "ego_pose": {
+    "translation": [
+      380.55368776636766,
+      1110.897583821287,
+      0.0
+    ],
+    "rotation": [
+      0.9820178551588087,
+      -0.001263352829504012,
+      0.0066272973687878396,
+      0.18866747207324092
+    ]
+  },
+  "num_pedestrians": 22,
+  "num_vehicles": 13,
+  "num_crosswalks": 10,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "716f6b3475964444bcf475a5116d6562",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "80775f55d74d43b9b61b13656c5a6e7a",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "a4806f0411864715b1967e111aee670e",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "1073a31038934477aa275b9b8817d2fc",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "a02cf94eccf049b58be6b78aa1d7184b",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "f54c60d467e94968a6fe7efa3398726a",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "364619fa0de74e5397c878c11769789d",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "dd9b77574fd141c399b2cf23573120c2",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "d5cfc8781dec4d38a5527d1006abdeb2",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "412825bfef2c4bf6ad65aa261bf8f0d7",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "0d3579938bb845839bf54defaabcc002",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "9fcbcc0eae374ae6b6e6e1aed49aa433",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "8c328eb0abfc4cf49f3ac9d068ef2fa8",
+      "object_category": "human.pedestrian.child",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "18e13a41ae9740619de3f2c961170296",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "9ca157e8bdd3407db22cedd8aa15077b",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "a8222a9b036c4b2998f488a74de47232",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "788c70e5bebe4922a6e935e31c9eb92b",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "5965b9e2b1564693a7963da7d091c922",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "82044d33bfe344499cf0e3e6a9b88728",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "32c649e7c5474bd895b6cc3cf07141ea",
+      "object_category": "human.pedestrian.construction_worker",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "0a1f30e2742b4a35af83534ef4478ad3",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "07a6f9cebecc4f43b4e381eba6ea8e25",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "716f6b3475964444bcf475a5116d6562",
+      "subject_category": "human.pedestrian.adult",
+      "object": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "80775f55d74d43b9b61b13656c5a6e7a",
+      "subject_category": "human.pedestrian.construction_worker",
+      "object": "397f0172-c488-4084-be06-b8db98b2aa1c",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "1073a31038934477aa275b9b8817d2fc",
+      "subject_category": "human.pedestrian.construction_worker",
+      "object": "397f0172-c488-4084-be06-b8db98b2aa1c",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "f54c60d467e94968a6fe7efa3398726a",
+      "subject_category": "human.pedestrian.construction_worker",
+      "object": "1060960e-f804-45f9-a6a7-e154c818ae11",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "0d3579938bb845839bf54defaabcc002",
+      "subject_category": "human.pedestrian.adult",
+      "object": "1852502d-1b73-430c-bb98-047e555e841e",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "8c328eb0abfc4cf49f3ac9d068ef2fa8",
+      "subject_category": "human.pedestrian.child",
+      "object": "1852502d-1b73-430c-bb98-047e555e841e",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "18e13a41ae9740619de3f2c961170296",
+      "subject_category": "human.pedestrian.adult",
+      "object": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "9ca157e8bdd3407db22cedd8aa15077b",
+      "subject_category": "human.pedestrian.adult",
+      "object": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "a8222a9b036c4b2998f488a74de47232",
+      "subject_category": "human.pedestrian.adult",
+      "object": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "5965b9e2b1564693a7963da7d091c922",
+      "subject_category": "human.pedestrian.adult",
+      "object": "1852502d-1b73-430c-bb98-047e555e841e",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "32c649e7c5474bd895b6cc3cf07141ea",
+      "subject_category": "human.pedestrian.construction_worker",
+      "object": "3279446c-f30a-4f80-8fcd-2e7ef425939b",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "07a6f9cebecc4f43b4e381eba6ea8e25",
+      "subject_category": "human.pedestrian.adult",
+      "object": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+      "object_category": "ped_crossing",
+      "relation": "NTPP",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "4ca2754cfd5b427b875dfc5779ec6aec",
+      "object_category": "vehicle.motorcycle",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "1c803e3cb4b34e5c9a7e600dac568ef3",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "f10a277748084da7b9afc75ee24048bd",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "ca2326aa32f2400c9cd7e58a6f7a769d",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "7a4a6c92fa0e4ff8abf8d195b2762807",
+      "object_category": "vehicle.bicycle",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "1e2bc655c6ec4c4b8b04f9b90edebb74",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "4ed0be8116194eac9f8731edc695c028",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3c770d39ec7145269b3cb07492a3a325",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "b098f72c07d941a4acde95d53fc258f7",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "52d1b9a017544cfd8636e67b77468a17",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "2e3227afa9d14ed7965ac7d3d62fde11",
+      "object_category": "vehicle.construction",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "e069f2bd8744499091bd44b055fc0500",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3c4a74dc23d54a28b568d26e9e2aa117",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 16,
+    "dc_ped_crosswalk_pairs_dropped": 208
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}

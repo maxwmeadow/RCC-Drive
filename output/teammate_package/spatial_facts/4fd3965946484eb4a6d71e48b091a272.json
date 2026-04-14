@@ -1,0 +1,149 @@
+{
+  "sample_token": "4fd3965946484eb4a6d71e48b091a272",
+  "scene_token": "717053dec2ef4baa913ba1e24c09edff",
+  "timestamp": 1537299016700424,
+  "ego_pose": {
+    "translation": [
+      1447.9085301944563,
+      1215.807801194387,
+      0.0
+    ],
+    "rotation": [
+      0.902907605610008,
+      0.0034572664394665435,
+      3.147653832653364e-05,
+      0.4298207789877038
+    ]
+  },
+  "num_pedestrians": 4,
+  "num_vehicles": 11,
+  "num_crosswalks": 11,
+  "relations": [
+    {
+      "subject": "ego",
+      "object": "a56c073a303c4352af72522f685ffefc",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "0ea024f8fea2475dbd78d8fb3c8be3cb",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "e34358ab55b6478b9132fee23b5de1b2",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "ego",
+      "object": "24fcecf69a8248dd9b96e6d6db34e9b9",
+      "object_category": "human.pedestrian.adult",
+      "relation": "DC",
+      "pair_type": "ego_vs_pedestrian"
+    },
+    {
+      "subject": "24fcecf69a8248dd9b96e6d6db34e9b9",
+      "subject_category": "human.pedestrian.adult",
+      "object": "ed955005-bb42-4821-83d4-b2c000f81b9c",
+      "object_category": "ped_crossing",
+      "relation": "PO",
+      "pair_type": "pedestrian_vs_crosswalk"
+    },
+    {
+      "subject": "ego",
+      "object": "8e818794a3d14952b0ed5c8a270dd4e2",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "e0b8d87c988448e49bb72208de31ea8a",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "83ad32d1fb8d4896ba63894c6164c819",
+      "object_category": "vehicle.truck",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "870f0393f7c444e08a429d4a29349ea8",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "a238a15ca53d4a79a25c89c314443fb9",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "94d2a4e6d67c46d7b63f70d5d6a6cc7e",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "254e7cba6b6445de998578e41830b2a9",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "b408f5df66c449ab903cfa9a12912c49",
+      "object_category": "vehicle.bus.bendy",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "3df9768d7aa94a738f617a86261f66a0",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "79badcf519f24f9d9f09876170d688d3",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    },
+    {
+      "subject": "ego",
+      "object": "199772ca175f4be3b104e000f1fca839",
+      "object_category": "vehicle.car",
+      "relation": "DC",
+      "pair_type": "ego_vs_vehicle"
+    }
+  ],
+  "metadata": {
+    "dc_vehicle_pairs_dropped": 21,
+    "dc_ped_crosswalk_pairs_dropped": 43
+  },
+  "config": {
+    "max_object_distance": 50.0,
+    "crosswalk_search_radius": 80.0,
+    "ego_dimensions": [
+      4.084,
+      1.73
+    ],
+    "coordinate_frame": "global_bev"
+  }
+}
