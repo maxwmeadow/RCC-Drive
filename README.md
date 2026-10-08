@@ -1,16 +1,49 @@
-# RCC-Drive — Phase 1: Spatial Extraction Pipeline
+# RCC-Drive: Grounding Vision-Language Models in Formal Spatial Calculus for Autonomous Navigation
 
-**CSE 834 Group Project** | Person 1 deliverable
+**CSE 834 Group Project, Michigan State University**
+Shreya Rajpal · Maxim Meadow · Sai Yashwitha Reddy Velamuru
 
-Deterministically computed RCC-8 topological relations from nuScenes sensor data, used to ground VLM prompts in formal spatial constraints for autonomous driving scene understanding.
+📄 **Paper:** [`paper/RCC-Drive_CSE834_Paper.pdf`](paper/RCC-Drive_CSE834_Paper.pdf)
+
+RCC-Drive is a training-free system that computes Region Connection Calculus-8 (RCC-8) topological relations deterministically from nuScenes sensor and map data. It then injects them into vision-language model (VLM) prompts as hard spatial constraints for autonomous-driving scene understanding.
+
+---
+
+## Paper
+
+The full write-up is in [`paper/RCC-Drive_CSE834_Paper.pdf`](paper/RCC-Drive_CSE834_Paper.pdf). It covers:
+
+- **Motivation.** VLMs hallucinate pedestrian positions and topological relations in driving scenes. On SURDS, GPT-4o scores 13.30/100. LLMs also can't reliably infer RCC-8 relations, even from explicit polygons (Cohn & Blackwell, 2024). So RCC-Drive *computes* the relations and hands them to the VLM instead of asking the model to work them out.
+- **Method (Section 3).** The repository implements this method:
+  - BEV ground-plane extraction in global coordinates
+  - An 8-relation RCC-8 classifier built on Shapely DE-9IM predicates
+  - Four safety-critical pair types (ego–pedestrian, pedestrian–crosswalk, ego–vehicle, vehicle–vehicle)
+  - Calibrated CAM_FRONT field-of-view curation
+- **Experiments (Section 4).** MiniCPM-V (temperature 0.0) is compared on 59 curated v1.0-mini keyframes under two prompts: a **Baseline** chain-of-thought prompt (image only) and the **RCC-Drive** prompt (image plus an RCC-8 fact sheet). Risk distributions are compared against a random reference baseline. RCC-Drive frequently assigns different risk levels from the image-only baseline on the same scenes, which shows that the injected topological facts change how the model perceives scene severity.
+
+### Citation
+
+```bibtex
+@misc{rajpal2026rccdrive,
+  title  = {RCC-Drive: Grounding Vision-Language Models in Formal Spatial Calculus for Autonomous Navigation},
+  author = {Rajpal, Shreya and Meadow, Maxim and Velamuru, Sai Yashwitha Reddy},
+  year   = {2026},
+  note   = {CSE 834 course project, Michigan State University}
+}
+```
 
 ---
 
 ## Overview
 
-Phase 1 converts nuScenes samples into structured JSON files (`spatial_facts`) containing RCC-8 region connection calculus relations for every safety-critical object pair visible to the ego vehicle. These facts are consumed by Phase 2 (VLM prompting) and Phase 3 (evaluation).
+The project has two phases:
 
-The core claim: RCC-8 relations computed from sensor data are **deterministic and verifiable**, unlike VLM spatial assertions which can hallucinate. Injecting these as hard constraints into prompts should reduce spatial hallucination in driving decisions.
+| Phase | What it does | Where |
+|-------|--------------|-------|
+| **1. Spatial extraction** | nuScenes samples → per-sample RCC-8 fact sheets (`spatial_facts` JSON) → CAM_FRONT FOV curation | `rcc_drive/`, `run_extraction.py`, `filter_samples.py` |
+| **2. VLM inference and evaluation** | Baseline vs. RCC-Drive prompting of local multimodal VLMs through Ollama, with risk/decision analysis | `vlm_inference_v2 (2).ipynb` |
+
+The core claim: RCC-8 relations computed from sensor data are **deterministic and verifiable**, unlike VLM spatial assertions, which can hallucinate. Injecting these relations into prompts as hard constraints should reduce spatial hallucination in driving decisions.
 
 ---
 
@@ -81,10 +114,15 @@ RCC-Drive/
 │       └── prediction/
 ├── rcc_drive/              # pipeline source
 ├── tests/
+├── paper/
+│   └── RCC-Drive_CSE834_Paper.pdf   # project paper
+├── vlm_inference_v2 (2).ipynb       # Phase 2 VLM inference notebook
 ├── output/
 │   ├── spatial_facts/      # generated, not committed (404 files ~15 MB)
 │   ├── visualizations/     # generated, not committed
-│   └── curated_samples.json  # committed — primary Phase 2/3 handoff artifact
+│   ├── curated_samples.json  # committed — primary Phase 2/3 handoff artifact
+│   ├── multi_model_results12 (1).json  # Phase 2 VLM outputs (3 models)
+│   └── teammate_package/     # 118-sample trainval subset (images + facts)
 └── dummy/
     └── spatial_facts_dummy.json  # hand-crafted example for Person 2
 ```
@@ -177,7 +215,7 @@ Each `output/spatial_facts/<sample_token>.json`:
 
 ## Key Design Decisions
 
-These decisions are deliberate and should appear in the paper methodology section.
+These decisions are deliberate. They are described in Section 3 of the [paper](paper/RCC-Drive_CSE834_Paper.pdf).
 
 ### 1. Coordinate System: BEV Ground Plane in Global Coordinates
 
@@ -268,6 +306,29 @@ Mini pipeline summary (from `output/spatial_facts/_summary.json`):
 
 ---
 
+## Phase 2: VLM Inference
+
+`vlm_inference_v2 (2).ipynb` runs the prompting experiments described in Section 4 of the paper.
+
+```bash
+pip install langchain langchain-ollama Pillow
+ollama serve
+ollama pull minicpm-v        # model used in the paper; others can be set via OLLAMA_MODEL
+jupyter notebook "vlm_inference_v2 (2).ipynb"
+```
+
+The notebook:
+1. Optionally runs Phase 1 extraction, then maps each curated sample token to its CAM_FRONT image.
+2. Builds the **Baseline** and **RCC-Drive** prompts. Both use the same JSON output schema: scene description, spatial reasoning, risk level (`LOW`/`MEDIUM`/`HIGH`/`CRITICAL`), and driving decision.
+3. Calls the VLM with the image attached, at temperature 0.0, and parses the JSON responses.
+4. Compares the two conditions qualitatively, side by side, and plots risk distributions for Baseline vs. RCC-Drive vs. a random baseline.
+
+**Results:** `output/multi_model_results12 (1).json` holds per-sample outputs for MiniCPM-V 2.6 (8B), Gemma 4 e4b, and Qwen3.5 4B.
+
+**Trainval subset:** `output/teammate_package/` holds 118 curated trainval samples: CAM_FRONT images, spatial facts, and `sample_tokens.json`. Its `README.txt` explains how to point the notebook at them.
+
+---
+
 ## Handoff to Phase 2
 
 **Primary artifact:** `output/curated_samples.json`
@@ -299,3 +360,4 @@ See `dummy/spatial_facts_dummy.json` for annotated examples of all relation type
 | `run_extraction.py` | CLI: run full pipeline on all scenes |
 | `filter_samples.py` | CLI: filter by CAM_FRONT FOV visibility |
 | `estimate_trainval_yield.py` | Estimate trainval curated count (metadata only) |
+| `vlm_inference_v2 (2).ipynb` | Phase 2: Baseline vs. RCC-Drive VLM prompting and risk analysis |
